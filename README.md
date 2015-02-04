@@ -1,5 +1,28 @@
 # Raspberry-Pi-Alarm-Clock
 
+##Architecture concept
+
+
+>                                        +----------------+                         
+>                                        |MySQL           |                         
+>                                        |Alarm Storage   |                         
+>                                        +--------+-------+ <--------------+        
+>                                                 |                        |        
+>                                                 v                        |        
+>                                                                          |        
+>                  +--------------+      +--+-------------+    +-----------+-------+
+>  +----+          |PHP           |      |Java            |    |PHP                |
+>  |Cron+------->  |Alarm Checker +----> |Message Builder |    |Managment Interface|
+>  +----+          +--------------+      +--------+-------+    +-------------------+
+>                                                 |                                 
+>                                                 v                                 
+>                                                                                   
+>                                        +-----------------+                        
+>                                        |Bash             |                        
+>                                        |Speech Synthesis |                        
+>                                        +-----------------+                        
+
+
 ##Installation
 
 sudo apt-get update
