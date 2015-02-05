@@ -4,6 +4,18 @@
 
 ![](http://i.imgur.com/SnVPmfZ.png)
 
+###Alarm checker
+A php script that connects to the database and looks for alarms in the current minute
+
+###Alarm Storage
+A MySQL Database that stores every alarm
+
+###Message Builder
+A Java Commandline Application that build sentences for the Text-To-Speech via API (i.e. Weather)
+
+###Management Interface
+A mobile friendly UI for creating and deleting the alarm
+
 ##Installation
 
 sudo apt-get update
