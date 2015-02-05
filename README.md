@@ -12,6 +12,8 @@ A MySQL Database that stores every alarm
 
 ###Message Builder
 A Java Commandline Application that build sentences for the Text-To-Speech via API (i.e. Weather)
+It uses forecast.io for its JSON API, so you will need an API Key.
+Configure the parameters for the linex in the config.properties in the src folder
 
 ###Management Interface
 A mobile friendly UI for creating and deleting the alarm
