@@ -9,7 +9,7 @@ if(!empty($_POST["time"])){
     $stmt->bindParam(':time', $time);
     $stmt->bindParam(':track_id', $track_id);
     $stmt->execute();
-    echo "Alarm has been saved.";
+    echo "Alarm has been saved";
 }
 
 ?>
