@@ -1,5 +1,7 @@
 # Raspberry-Pi-Alarm-Clock
 
+![Logo](https://raw.githubusercontent.com/JanWerder/Raspberry-Pi-Alarm-Clock/master/Management%20interface/images/logo.png)
+
 ##Architecture concept
 
 ![](http://i.imgur.com/SnVPmfZ.png)
