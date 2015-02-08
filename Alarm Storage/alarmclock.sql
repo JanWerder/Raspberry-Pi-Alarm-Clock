@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.5
+-- version 4.2.6deb1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 05. Feb 2015 um 21:23
--- Server Version: 5.5.29
--- PHP-Version: 5.4.10
+-- Generation Time: Feb 08, 2015 at 09:13 PM
+-- Server version: 5.5.41-0ubuntu0.14.10.1
+-- PHP Version: 5.5.12-2ubuntu4.1
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,32 +17,63 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Datenbank: `alarmclock`
+-- Database: `alarmclock`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `alarms`
+-- Table structure for table `alarms`
 --
 
 CREATE TABLE IF NOT EXISTS `alarms` (
-  `id` int(15) NOT NULL,
-  `time` datetime NOT NULL,
+`id` int(15) NOT NULL,
+  `time` varchar(5) NOT NULL,
   `track_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `tracks`
+-- Table structure for table `tracks`
 --
 
 CREATE TABLE IF NOT EXISTS `tracks` (
-  `id` varchar(15) CHARACTER SET utf8 NOT NULL,
-  `path` varchar(250) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='table to store all possible tracks with absolute paths';
+`id` int(15) NOT NULL,
+  `path` varchar(250) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='table to store all possible tracks with absolute paths' AUTO_INCREMENT=3 ;
 
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `alarms`
+--
+ALTER TABLE `alarms`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tracks`
+--
+ALTER TABLE `tracks`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `alarms`
+--
+ALTER TABLE `alarms`
+MODIFY `id` int(15) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tracks`
+--
+ALTER TABLE `tracks`
+MODIFY `id` int(15) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
